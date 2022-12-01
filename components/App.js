@@ -22,6 +22,9 @@ const App = () => {
             }
         };
         if (typeof window !== "undefined") {
+            if (window.scrollY > 20) {
+                setIsSticky(true);
+            }
             const loader = document.getElementById("globalLoader");
             if (loader) console.log("Loader", loader);
         }

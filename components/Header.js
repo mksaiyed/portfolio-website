@@ -17,7 +17,7 @@ const Header = ({ isSticky }) => {
                     <Image
                         src={
                             "/assets/" +
-                            (isSticky ? "logo-black.png" : "logo-white.png")
+                            (isSticky ? "logo-black.svg" : "logo-white.svg")
                         }
                         alt="Logo"
                         width="42"

@@ -20,7 +20,7 @@ const AboutSection = () => {
                 <SectionTitle>About</SectionTitle>
                 <StyledAboutContent>
                     <Image
-                        src="/assets/mtech.png"
+                        src="/assets/logo.png"
                         alt="Logo"
                         width="200"
                         height="200"
