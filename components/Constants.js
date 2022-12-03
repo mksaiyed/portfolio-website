@@ -10,10 +10,10 @@ export const MenuList = [
 ];
 
 export const AboutSectionData = {
-    heading: "Hi! I'm Darkcoder",
-    aboutTags: ["Web Developer", "Javascript", "React"],
+    heading: "Hi! I'm Mohammad kaif",
+    aboutTags: ["Web Developer", "Javascript", "React JS", "Next Js", "React Native"],
     description:
-        "I can work on Web designing Projects, and SPA with React development.Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum, dolor sit amet consectetur adipisicing elit",
+        "I’m an ambitious Front-End Developer who's passionate about coding and looking for a role in the established IT company with the opportunity to work with the latest technologies on challenging and diverse projects.",
 };
 
 export const Skills = [
@@ -27,68 +27,68 @@ export const Skills = [
 
 export const Services = [
     {
-        title: "Design",
+        title: "Web Design",
         src: "/assets/services/paintbrush.svg",
         description:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+            "The websites I design, build, and improve are easy to understand, navigate, and use by users.",
     },
     {
         title: "Build Websites",
         src: "/assets/services/pager.svg",
         description:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+            "Building personal, blog, business, e-commerce, and mobile-friendly websites using the latest frameworks.",
     },
     {
         title: "Manage Databases",
         src: "/assets/services/database.svg",
         description:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+            "Develop and maintain Organization/Project databases & troubleshoot database problems ",
     },
     {
         title: "Android Apps",
         src: "/assets/services/android.svg",
         description:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+            "I am able to design Android apps as well as Native applications using React-native ",
     },
-    {
-        title: "UI Design",
-        src: "/assets/services/credit-card.svg",
-        description:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-    },
-    {
-        title: "Edit Texts",
-        src: "/assets/services/keyboard.svg",
-        description:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-    },
+    // {
+    //     title: "UI Design",
+    //     src: "/assets/services/credit-card.svg",
+    //     description:
+    //         "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    // },
+    // {
+    //     title: "Edit Texts",
+    //     src: "/assets/services/keyboard.svg",
+    //     description:
+    //         "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    // },
 ];
 
 export const EducationAndExp = [
     {
-        time: "2018-2020",
-        title: "Software Eng",
-        description: "Lorem ipsum, dolor sit amet consect",
+        time: "Jan 2022-Current",
+        title: "Software Developer",
+        description: "Software Developer at Maruti techlabs.",
     },
     {
-        time: "2018-2020",
-        title: "Software Eng",
-        description: "Lorem ipsum, dolor sit amet consect",
+        time: "Aug 2021-Dec 2021",
+        title: "React Intern",
+        description: "React Intern at Axelor Pvt Ltd.",
     },
     {
-        time: "2018-2020",
-        title: "Software Eng",
-        description: "Lorem ipsum, dolor sit amet consect",
+        time: "July 2018- June 2022",
+        title: "BE/BTech in Information Technology",
+        description: "Graduated from Gandhinagar Engineering College with an 8.65 CGPA.",
     },
     {
-        time: "2018-2020",
-        title: "Software Eng",
-        description: "Lorem ipsum, dolor sit amet consect",
+        time: "June 2016- April 2018",
+        title: "12th (HSC Science)",
+        description: "Completed HSC 12th (Science) with 90%.",
     },
     {
-        time: "2018-2020",
-        title: "Software Eng",
-        description: "Lorem ipsum, dolor sit amet consect",
+        time: "June 2015- April 2016",
+        title: "10th (SSC)",
+        description: "Completed ssc 10th with 80%",
     },
 ];
 
@@ -134,14 +134,14 @@ export const Works = [
 export const ContactItems = [
     {
         src: "/assets/contact/mobile-screen.svg",
-        value: "+91 999777333",
+        value: "+91 7383270340",
     },
     {
         src: "/assets/contact/email.svg",
-        value: "dummy@email.com",
+        value: "mrmksaiyed@gmail.com",
     },
     {
         src: "/assets/contact/location.svg",
-        value: "Gujarat, India.",
+        value: "Ahmedabad, Gujarat, India.",
     },
 ];

@@ -1,9 +1,9 @@
 import React from "react";
-import ButtonComp from "./ButtonComp";
 import {
     HomeContainer,
     HomeContent,
     HomeContentTitle,
+    StyledButton,
     StyledHomeSection,
 } from "./CommonStyledComp";
 import SocialMediaIcons from "./SocialMediaIcons";
@@ -17,11 +17,8 @@ const HomeSection = () => {
                         <HomeContentTitle>{`Hi I'm `}</HomeContentTitle>
                         <SocialMediaIcons />
                         <div style={{ marginTop: 60 }}>
-                            <ButtonComp name="Contact me" href="#contact" />
-                            <ButtonComp
-                                name="Download CV"
-                                variant="secondary"
-                            />
+                            <StyledButton href="#contact">Contact me</StyledButton>
+                            <StyledButton variant={"secondary"}>Download CV</StyledButton>
                         </div>
                     </HomeContent>
                 </HomeContainer>

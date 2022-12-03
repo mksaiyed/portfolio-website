@@ -1,5 +1,4 @@
 import React from "react";
-import ButtonComp from "./ButtonComp";
 import {
     CommonSection,
     Container,
@@ -8,8 +7,6 @@ import {
     StyledContactImage,
     StyledContactInfo,
     StyledContactItem,
-    StyledInput,
-    StyledTextArea,
 } from "./CommonStyledComp";
 import { ContactItems } from "./Constants";
 

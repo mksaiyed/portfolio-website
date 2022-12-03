@@ -54,7 +54,7 @@ export const HomeContentTitle = styled.h1`
     font-size: 60px;
     margin-bottom: 60px;
     &:after {
-        content: "Dark Coder";
+        content: "Mohammad Kaif";
         animation: textAnim 10s linear infinite;
     }
     @keyframes textAnim {
@@ -70,7 +70,7 @@ export const HomeContentTitle = styled.h1`
     }
 `;
 
-export const StyledButton = styled.div`
+export const StyledButton = styled.a`
     display: inline-block;
     margin: 15px 30px;
     color: ${(props) =>
@@ -241,8 +241,7 @@ export const StyledAboutText = styled.div`
         color: ${TEXT_COLOR};
         font-size: 16px;
     }
-    h3 span:nth-child(1):after,
-    h3 span:nth-child(2):after {
+    h3 span::after {
         content: "";
         width: 6px;
         height: 6px;
@@ -250,6 +249,10 @@ export const StyledAboutText = styled.div`
         display: inline-block;
         border-radius: 50%;
         margin: 0 14px;
+    }
+    h3 span:last-child:after {
+        content: "";
+        background-color: unset;
     }
     p {
         font-size: 17px;
