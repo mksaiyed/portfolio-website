@@ -17,8 +17,16 @@ const HomeSection = () => {
                         <HomeContentTitle>{`Hi I'm `}</HomeContentTitle>
                         <SocialMediaIcons />
                         <div style={{ marginTop: 60 }}>
-                            <StyledButton href="#contact">Contact me</StyledButton>
-                            <StyledButton variant={"secondary"}>Download CV</StyledButton>
+                            <StyledButton href="#contact">
+                                Contact me
+                            </StyledButton>
+                            <StyledButton
+                                variant={"secondary"}
+                                href="/assets/resume.pdf"
+                                download="MohammadKaif Resume"
+                            >
+                                Download CV
+                            </StyledButton>
                         </div>
                     </HomeContent>
                 </HomeContainer>

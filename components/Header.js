@@ -37,7 +37,11 @@ const Header = ({ isSticky }) => {
                     </StyledMenuToggle>
                     <StyledMenuList isActive={isActive} isSticky={isSticky}>
                         {MenuList.map((data, index) => (
-                            <a href={`#${data.toLowerCase()}`} key={index}>
+                            <a
+                                href={`#${data.toLowerCase()}`}
+                                key={index}
+                                onClick={() => setIsActive((prev) => !prev)}
+                            >
                                 {data}
                             </a>
                         ))}

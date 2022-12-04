@@ -122,7 +122,7 @@ export const NavContainer = styled(Container)`
     justify-content: space-between;
 `;
 
-export const StyledMenuToggle = styled.button`
+export const StyledMenuToggle = styled.div`
     background: none;
     width: 30px;
     border: none;
@@ -393,7 +393,7 @@ export const StyledWorkInfo = styled.div`
     z-index: 2;
     bottom: 40px;
     left: 40px;
-    color: #fff;
+    color: ${WHITE_COLOR};
     transition: 0.4s linear;
     opacity: 0;
 `;
@@ -411,7 +411,7 @@ export const StyledWorkBlock = styled.a`
         width: 100%;
         height: 100%;
         z-index: 1;
-        background-color: #48dbfbcc;
+        background-color: ${PRIMARY_COLOR}cc;
         transition: 0.2s linear;
         opacity: 0;
         transform: scale(0);
@@ -439,13 +439,13 @@ export const StyledContactItem = styled.div`
     width: calc(33% - 20px);
     height: 160px;
     background-color: #353b48;
-    color: #fff;
+    color: ${WHITE_COLOR};
     text-align: center;
     border-radius: 4px;
     cursor: pointer;
     transition: 0.3s linear;
     &:hover {
-        background-color: #48dbfb;
+        background-color: ${PRIMARY_COLOR};
     }
     @media screen and (max-width: 980px) {
         width: 100%;
@@ -492,17 +492,17 @@ export const StyledContactForm = styled.form`
     .btnZone {
         width: 180px;
         background-color: transparent;
-        color: #48dbfb;
+        color: ${PRIMARY_COLOR};
         font-size: 16px;
-        border: 2px solid #48dbfb;
+        border: 2px solid ${PRIMARY_COLOR};
         padding: 0;
         margin-left: auto;
         cursor: pointer;
         transition: 0.3s linear;
     }
     .btnZone:hover {
-        background-color: #48dbfb;
-        color: #fff;
+        background-color: ${PRIMARY_COLOR};
+        color: ${WHITE_COLOR};
     }
     @media screen and (max-width: 600px) {
         .nameZone,
@@ -514,7 +514,7 @@ export const StyledContactForm = styled.form`
 
 export const StyledFooter = styled.footer`
     background: url("/assets/bg.jpg") no-repeat center;
-    color: #fff;
+    color: ${WHITE_COLOR};
     padding: 80px 0;
     text-align: center;
 `;
@@ -524,12 +524,12 @@ export const StyledCopyrightBlock = styled.div`
     font-size: 15px;
     a {
         font-size: 16px;
-        color: #48dbfb;
+        color: ${PRIMARY_COLOR};
         font-weight: 500;
     }
 `;
 
-export const StyledGoTopBtn = styled.button`
+export const StyledGoTopBtn = styled.div`
     position: fixed;
     z-index: 999;
     bottom: 40px;
@@ -538,7 +538,7 @@ export const StyledGoTopBtn = styled.button`
     height: 40px;
     background: url("/assets/arrow-up.svg") no-repeat center / contain;
     background-size: 25px 25px;
-    background-color: #48dbfb;
+    background-color: ${PRIMARY_COLOR};
     border: none;
     border-radius: 6px;
     cursor: pointer;
