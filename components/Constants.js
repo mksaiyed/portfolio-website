@@ -11,7 +11,13 @@ export const MenuList = [
 
 export const AboutSectionData = {
     heading: "Hi! I'm Mohammad kaif",
-    aboutTags: ["Web Developer", "Javascript", "React JS", "Next Js", "React Native"],
+    aboutTags: [
+        "Web Developer",
+        "Javascript",
+        "React JS",
+        "Next Js",
+        "React Native",
+    ],
     description:
         "I’m an ambitious Front-End Developer who's passionate about coding and looking for a role in the established IT company with the opportunity to work with the latest technologies on challenging and diverse projects.",
 };
@@ -50,18 +56,18 @@ export const Services = [
         description:
             "I am able to design Android apps as well as Native applications using React-native ",
     },
-    // {
-    //     title: "UI Design",
-    //     src: "/assets/services/credit-card.svg",
-    //     description:
-    //         "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-    // },
-    // {
-    //     title: "Edit Texts",
-    //     src: "/assets/services/keyboard.svg",
-    //     description:
-    //         "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-    // },
+    {
+        title: "UI Design",
+        src: "/assets/services/credit-card.svg",
+        description:
+            "Creating user experience-driven web designs is one of my favorite things to do.",
+    },
+    {
+        title: "Extra Works",
+        src: "/assets/services/keyboard.svg",
+        description:
+            "If you need any extra work such as scraping or data entry, I can do it in a smart way.",
+    },
 ];
 
 export const EducationAndExp = [
@@ -78,7 +84,8 @@ export const EducationAndExp = [
     {
         time: "July 2018- June 2022",
         title: "BE/BTech in Information Technology",
-        description: "Graduated from Gandhinagar Engineering College with an 8.65 CGPA.",
+        description:
+            "Graduated from Gandhinagar Engineering College with an 8.65 CGPA.",
     },
     {
         time: "June 2016- April 2018",
@@ -94,40 +101,44 @@ export const EducationAndExp = [
 
 export const Works = [
     {
-        link: "#",
+        link: "https://responsive-site-kaif.netlify.app",
         src: "/assets/works/1.jpg",
-        title: "Work Title",
-        description: "Lorem ipsum, dolor sit amet consect",
+        title: "Responsive Landing Page",
+        description: "This is a responsive health care landing page.",
     },
     {
-        link: "#",
+        link: "https://todo-list-kaif.netlify.app",
         src: "/assets/works/2.jpg",
-        title: "Work Title",
-        description: "Lorem ipsum, dolor sit amet consect",
+        title: "Todo List",
+        description:
+            "An easy-to-use TODO list with add, delete, search, and no data loss unless deleted.",
     },
     {
-        link: "#",
+        link: "https://weather-site-kaif.netlify.app",
         src: "/assets/works/3.jpg",
-        title: "Work Title",
-        description: "Lorem ipsum, dolor sit amet consect",
+        title: "Weather Website",
+        description:
+            "By changing the city, we can get live weather updates, and I have also displayed all cards using the API.",
     },
     {
-        link: "#",
+        link: "https://react-food-order-kaif.netlify.app",
         src: "/assets/works/4.jpg",
-        title: "Work Title",
-        description: "Lorem ipsum, dolor sit amet consect",
+        title: "React Meals",
+        description:
+            "In this example, I have created a react meals site with functionality for adding meals and viewing carts.",
     },
     {
-        link: "#",
+        link: "https://transparent-login-kaif.netlify.app",
         src: "/assets/works/5.jpg",
-        title: "Work Title",
-        description: "Lorem ipsum, dolor sit amet consect",
+        title: "Transparent Login",
+        description: "Here is sample transparent login page.",
     },
     {
-        link: "#",
+        link: "https://react-expence-kaif.netlify.app",
         src: "/assets/works/6.jpg",
-        title: "Work Title",
-        description: "Lorem ipsum, dolor sit amet consect",
+        title: "React Expense",
+        description:
+            "To gain a better understanding of React concepts, check out this sample site.",
     },
 ];
 
