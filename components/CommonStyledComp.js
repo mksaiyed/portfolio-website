@@ -417,7 +417,7 @@ export const StyledWorkBlock = styled.a`
         transform: scale(0);
     }
     &:hover ${StyledWorkImage} {
-        transform: scale(1.6) rotate(25deg);
+        transform: scale(1.8);
     }
     &:hover ${StyledWorkInfo}, &:hover::before {
         opacity: 1;
