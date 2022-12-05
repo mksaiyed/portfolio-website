@@ -38,7 +38,7 @@ const App = () => {
     return (
         <>
             <Head>
-                <title>Portfolio Website ✨| JavaScript Developer 👨‍💻</title>
+                <title>Portfolio Website ✨ | JavaScript Developer 👨‍💻</title>
                 <meta charset="utf-8" />
                 <meta
                     name="viewport"
