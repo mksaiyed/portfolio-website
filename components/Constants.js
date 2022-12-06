@@ -1,13 +1,12 @@
-export const LogoList = ["facebook", "instagram", "twitter", "linkedin"];
-
-export const MenuList = [
-    "Home",
-    "About",
-    "Services",
-    "Education",
-    "Works",
-    "Contact",
+export const LogoList = [
+    { name: "facebook", link: "http://www.facebook.com/mksaiyedfb" },
+    { name: "instagram", link: "http://www.instagram.com/mk__saiyed" },
+    { name: "twitter", link: "http://twitter.com/mk__saiyed" },
+    { name: "linkedin", link: "http://www.linkedin.com/in/mksaiyed" },
+    { name: "github", link: "http://github.com/mksaiyed" },
 ];
+
+export const MenuList = ["Home", "About", "Services", "Education", "Works", "Contact"];
 
 export const AboutSectionData = {
     heading: "Hi! I'm Mohammad kaif",
