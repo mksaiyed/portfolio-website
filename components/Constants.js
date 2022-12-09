@@ -6,15 +6,22 @@ export const LogoList = [
     { name: "github", link: "http://github.com/mksaiyed" },
 ];
 
-export const MenuList = ["Home", "About", "Services", "Education", "Works", "Contact"];
+export const MenuList = [
+    "Home",
+    "About",
+    "Services",
+    "Education",
+    "Works",
+    "Contact",
+];
 
 export const AboutSectionData = {
-    heading: "Hi! I'm Mohammad kaif",
+    heading: "Hi! I'm Mohammad Kaif",
     aboutTags: [
         "Web Developer",
-        "Javascript",
+        "JavaScript",
         "React JS",
-        "Next Js",
+        "Next JS",
         "React Native",
     ],
     description:

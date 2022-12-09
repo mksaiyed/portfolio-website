@@ -77,11 +77,9 @@ const ContactSection = () => {
                         name="user_message"
                         required
                     />
-                    <input
-                        type="submit"
-                        className="btnZone"
-                        value="Send Message"
-                    />
+                    <button type="submit" className="sendMsgBtn">
+                        <span>Send Message</span>
+                    </button>
                 </StyledContactForm>
             </Container>
         </CommonSection>

@@ -29,6 +29,77 @@ export const CommonDivFlexWrapSpaceBetween = styled.div`
     flex-wrap: wrap;
 `;
 
+export const StyledLoader = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    /* Circle Loader */
+    .loader {
+        width: 35px;
+        height: 35px;
+        border: 3px solid ${PRIMARY_COLOR};
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    /* Bubbles Loader */
+    /* .loader,
+    .loader:before,
+    .loader:after {
+        border-radius: 50%;
+        width: 2.5em;
+        height: 2.5em;
+        animation-fill-mode: both;
+        animation: bubbleFadInOut 1.8s infinite ease-in-out;
+    }
+    .loader {
+        color: ${PRIMARY_COLOR};
+        font-size: 7px;
+        position: relative;
+        text-indent: -9999em;
+        transform: translateZ(0);
+        animation-delay: -0.16s;
+    }
+    .loader:before,
+    .loader:after {
+        content: "";
+        position: absolute;
+        top: 0;
+    }
+    .loader:before {
+        left: -3.5em;
+        animation-delay: -0.32s;
+    }
+    .loader:after {
+        left: 3.5em;
+    }
+
+    @keyframes bubbleFadInOut {
+        0%,
+        80%,
+        100% {
+            box-shadow: 0 2.5em 0 -1.3em;
+        }
+        40% {
+            box-shadow: 0 2.5em 0 0;
+        }
+    } */
+`;
+
 export const StyledHomeSection = styled(CommonSection)`
     height: 100vh;
     min-height: 500px;
@@ -50,44 +121,153 @@ export const HomeContent = styled.div`
     color: ${WHITE_COLOR};
 `;
 
-export const HomeContentTitle = styled.h1`
+export const HomeTitle = styled.div`
     font-size: 60px;
-    margin-bottom: 60px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    @media screen and (max-width: 980px) {
+        font-size: 50px;
+    }
+    @media screen and (max-width: 700px) {
+        font-size: 40px;
+    }
+    @media screen and (max-width: 500px) {
+        font-size: 35px;
+    }
+`;
+
+export const AnimatedHomeTitle = styled.div`
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: ${PRIMARY_COLOR};
+    @media screen and (max-width: 980px) {
+        font-size: 32px;
+    }
+    @media screen and (max-width: 700px) {
+        font-size: 24px;
+    }
+    @media screen and (max-width: 500px) {
+        font-size: 20px;
+    }
     &:after {
-        content: "Mohammad Kaif";
+        content: "A Javascript Developer";
         animation: textAnim 10s linear infinite;
     }
     @keyframes textAnim {
         25% {
-            content: "A Developer";
+            content: "A Website Designer";
         }
         50% {
-            content: "A Designer";
+            content: "A Web Developer";
         }
         75% {
-            content: "A Creator";
+            content: "A Content Creator";
         }
     }
+`;
+
+export const HomeButtonContainer = styled.div`
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 `;
 
 export const StyledButton = styled.a`
     display: inline-block;
     margin: 15px 30px;
-    color: ${(props) =>
-        props.variant === "secondary" ? WHITE_COLOR : PRIMARY_COLOR};
-    background-color: ${(props) =>
-        props.variant === "secondary" && PRIMARY_COLOR};
+    color: ${PRIMARY_COLOR};
     font-size: 15px;
     font-weight: 500;
     width: 180px;
     border: 1px solid ${PRIMARY_COLOR};
     padding: 14px 0;
-    border-radius: 6px;
-    transition: 0.2s linear;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: 0.5s linear;
     &:hover {
         cursor: pointer;
         background-color: ${PRIMARY_COLOR};
-        color: ${WHITE_COLOR};
+        color: ${(props) => (props.dark ? BLACK_COLOR : WHITE_COLOR)};
+    }
+`;
+
+export const StyledDownloadButton = styled.a`
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 190px;
+    line-height: 50px;
+    padding: 0;
+    border-radius: 50px;
+    background: ${(props) => (props.dark ? BLACK_COLOR : WHITE_COLOR)};
+    border: 1px solid ${PRIMARY_COLOR};
+    margin: 10px;
+    transition: 0.5s;
+    @media screen and (max-width: 300px) {
+        width: 230px;
+    }
+    &:hover {
+        background-color: ${PRIMARY_COLOR};
+        .circle {
+            left: 100%;
+            margin-left: -45px;
+            background-color: ${(props) =>
+                props.dark ? BLACK_COLOR : WHITE_COLOR};
+            div {
+                background-color: ${PRIMARY_COLOR};
+            }
+        }
+        .title {
+            left: 40px;
+            opacity: 0;
+        }
+        .title-hover {
+            opacity: 1;
+            left: 40px;
+        }
+    }
+
+    .circle {
+        display: block;
+        background-color: ${PRIMARY_COLOR};
+        position: absolute;
+        float: left;
+        margin: 5px;
+        line-height: 40px;
+        height: 38px;
+        width: 38px;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+        border-radius: 50%;
+        div {
+            mask: url("/assets/download.svg") no-repeat center / contain;
+            background-color: ${(props) =>
+                props.dark ? BLACK_COLOR : WHITE_COLOR};
+            height: 25px;
+            width: 25px;
+            margin: 6px;
+        }
+    }
+
+    .title,
+    .title-hover {
+        position: absolute;
+        left: 60px;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 16px;
+        font-weight: bold;
+        color: ${PRIMARY_COLOR};
+        transition: 0.5s;
+    }
+    .title-hover {
+        left: 80px;
+        opacity: 0;
+        color: ${(props) => (props.dark ? BLACK_COLOR : WHITE_COLOR)};
     }
 `;
 
@@ -232,6 +412,16 @@ export const StyledAboutContent = styled.div`
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    .aboutLogo {
+        border-radius: 50%;
+        margin-right: 100px;
+    }
+
+    @media screen and (max-width: 980px) {
+        .aboutLogo {
+            margin: 0 auto 60px;
+        }
+    }
 `;
 
 export const StyledAboutText = styled.div`
@@ -336,7 +526,11 @@ export const StyledServiceTitle = styled.h4`
     margin-bottom: 6px;
 `;
 
-export const StyledTimeline = styled(CommonDivFlexWrapSpaceBetween)``;
+export const StyledTimeline = styled(CommonDivFlexWrapSpaceBetween)`
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+`;
 
 export const StyledWorks = styled(CommonDivFlexWrapSpaceBetween)``;
 
@@ -357,6 +551,12 @@ export const StyledEducationBlock = styled.div`
         top: 50%;
         transform: translateY(-50%);
     }
+    :first-child::before {
+        top: 110%;
+    }
+    :last-child::before {
+        top: -10%;
+    }
     &::after {
         content: "";
         position: absolute;
@@ -364,8 +564,10 @@ export const StyledEducationBlock = styled.div`
         height: 16px;
         background-color: ${PRIMARY_COLOR};
         left: -28px;
-        top: 30px;
+        top: 50%;
+        transform: translateY(-50%);
         border-radius: 50%;
+        z-index: 2;
     }
     h3 {
         font-size: 16px;
@@ -394,6 +596,7 @@ export const StyledWorkInfo = styled.div`
     bottom: 40px;
     left: 40px;
     color: ${WHITE_COLOR};
+    font-weight: bold;
     transition: 0.4s linear;
     opacity: 0;
 `;
@@ -411,7 +614,7 @@ export const StyledWorkBlock = styled.a`
         width: 100%;
         height: 100%;
         z-index: 1;
-        background-color: ${PRIMARY_COLOR}cc;
+        background-color: ${PRIMARY_COLOR}aa;
         transition: 0.2s linear;
         opacity: 0;
         transform: scale(0);
@@ -444,6 +647,9 @@ export const StyledContactItem = styled.div`
     border-radius: 4px;
     cursor: pointer;
     transition: 0.3s linear;
+    span {
+        text-transform: none !important;
+    }
     &:hover {
         background-color: ${PRIMARY_COLOR};
     }
@@ -489,20 +695,43 @@ export const StyledContactForm = styled.form`
         min-height: 200px;
         resize: vertical;
     }
-    .btnZone {
-        width: 180px;
-        background-color: transparent;
-        color: ${PRIMARY_COLOR};
-        font-size: 16px;
-        border: 2px solid ${PRIMARY_COLOR};
-        padding: 0;
-        margin-left: auto;
+    .sendMsgBtn {
+        border: none;
+        display: block;
+        text-align: center;
         cursor: pointer;
-        transition: 0.3s linear;
+        outline: none;
+        overflow: hidden;
+        position: relative;
+        color: #fff;
+        font-weight: 700;
+        font-size: 15px;
+        background-color: #353b48;
+        padding: 17px 60px;
+        margin: 0 auto;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        span {
+            text-transform: uppercase !important;
+        }
     }
-    .btnZone:hover {
-        background-color: ${PRIMARY_COLOR};
-        color: ${WHITE_COLOR};
+    .sendMsgBtn span {
+        position: relative;
+        z-index: 1;
+    }
+    .sendMsgBtn:after {
+        content: "";
+        position: absolute;
+        left: 25px;
+        top: 0;
+        height: 490%;
+        width: 140%;
+        background: ${PRIMARY_COLOR};
+        transition: all 0.5s ease-in-out;
+        transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    }
+
+    .sendMsgBtn:hover:after {
+        transform: translateX(-9%) translateY(-25%) rotate(45deg);
     }
     @media screen and (max-width: 600px) {
         .nameZone,
