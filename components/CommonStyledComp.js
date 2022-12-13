@@ -177,16 +177,20 @@ export const HomeButtonContainer = styled.div`
 
 export const StyledButton = styled.a`
     display: inline-block;
-    margin: 15px 30px;
+    margin: 10px;
     color: ${PRIMARY_COLOR};
     font-size: 15px;
     font-weight: 500;
-    width: 180px;
+    width: 190px;
+    height: 50px;
     border: 1px solid ${PRIMARY_COLOR};
     padding: 14px 0;
     font-weight: bold;
     border-radius: 50px;
     transition: 0.5s linear;
+    @media screen and (max-width: 300px) {
+        width: 230px;
+    }
     &:hover {
         cursor: pointer;
         background-color: ${PRIMARY_COLOR};
@@ -202,7 +206,7 @@ export const StyledDownloadButton = styled.a`
     line-height: 50px;
     padding: 0;
     border-radius: 50px;
-    background: ${(props) => (props.dark ? BLACK_COLOR : WHITE_COLOR)};
+    background: ${(props) => (props.dark ? "transparent" : WHITE_COLOR)};
     border: 1px solid ${PRIMARY_COLOR};
     margin: 10px;
     transition: 0.5s;
