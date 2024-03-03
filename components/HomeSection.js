@@ -25,8 +25,8 @@ const HomeSection = () => {
                                 Contact Me
                             </StyledButton>
                             <StyledDownloadButton
-                                href="/assets/resume.pdf"
-                                download="MohammadKaif Resume"
+                                href="/assets/resume_2024.pdf"
+                                download="Mohammadkaif - Web Developer"
                                 dark
                             >
                                 <span className="circle">
