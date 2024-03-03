@@ -17,15 +17,8 @@ export const MenuList = [
 
 export const AboutSectionData = {
     heading: "Hi! I'm Mohammad Kaif",
-    aboutTags: [
-        "Web Developer",
-        "JavaScript",
-        "React JS",
-        "Next JS",
-        "React Native",
-    ],
-    description:
-        "I’m an ambitious Front-End Developer who's passionate about coding and looking for a role in the established IT company with the opportunity to work with the latest technologies on challenging and diverse projects.",
+    aboutTags: ["Web Developer", "JavaScript", "React Js", "Next Js"],
+    description: `Welcome to my portfolio! I'm Mohammadkaif, a results-driven web developer with over 2.5 years of experience in crafting cutting-edge digital solutions. My journey in the realm of web development began with a fascination for technology and a passion for creating seamless, user-friendly experiences. Over the years, I've honed my skills in React Js, Next Js, Node Js, Express Js, and other JavaScript frameworks, mastering the art of transforming ideas into functional, interactive web applications. My commitment to excellence and my love for problem-solving drive me to stay at the forefront of technological advancements, ensuring that every project I undertake not only meets but exceeds expectations. Ready to embark on a journey of innovation and creativity? Let's connect and bring your ideas to life!`,
 };
 
 export const Skills = [

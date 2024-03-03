@@ -12,7 +12,7 @@ const Footer = () => {
         <StyledFooter>
             <Container>
                 <StyledCopyrightBlock>
-                    &copy; 2022 | Created & Designed By{" "}
+                    &copy; {new Date().getUTCFullYear()} | Created & Designed By{" "}
                     <Link href="/">MohammadKaif</Link>
                 </StyledCopyrightBlock>
                 <SocialMediaIcons />

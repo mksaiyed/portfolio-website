@@ -2,6 +2,7 @@ import styled from "styled-components";
 import css from "styled-jsx/css";
 
 const WHITE_COLOR = "#FFF";
+const DARK_BG_COLOR = "#353b48";
 const PRIMARY_COLOR = "#48dbfb";
 const BLACK_COLOR = "#111";
 const TEXT_COLOR = "#444";
@@ -18,9 +19,17 @@ export const Container = styled.div`
     }
 `;
 
+export const StyledBackgroundCanvas = styled.canvas`
+    background-color: ${DARK_BG_COLOR};
+    position: absolute;
+    z-index: -999;
+    width: 100%;
+    height: 100%;
+`;
+
 export const CommonSection = styled.section`
     padding: 100px 0;
-    background-color: ${(props) => (props.dark ? "#353b48" : "#f1f1f1")};
+    background-color: ${(props) => (props.dark ? DARK_BG_COLOR : "#f1f1f1")};
 `;
 
 export const CommonDivFlexWrapSpaceBetween = styled.div`
@@ -103,9 +112,37 @@ export const StyledLoader = styled.div`
 export const StyledHomeSection = styled(CommonSection)`
     height: 100vh;
     min-height: 500px;
-    background: url("/assets/bg.jpg") no-repeat center;
+
+    background-color: transparent;
+    /* background-color: ${DARK_BG_COLOR}; */
+    /* background: url("/assets/bg.jpg") no-repeat center;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; */
+
+    /* background: linear-gradient(
+        300deg,
+        #070f2b,
+        #1b1a55,
+        #535c91,
+        #9290c3,
+        #535c91,
+        #1b1a55,
+        #070f2b
+    );
+    background-size: 420% 420%;
+    animation: gradient-animation 10s ease-in-out infinite;
+
+    @keyframes gradient-animation {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    } */
 `;
 
 export const HomeContainer = styled(Container)`
@@ -151,18 +188,21 @@ export const AnimatedHomeTitle = styled.div`
         font-size: 20px;
     }
     &:after {
-        content: "A Javascript Developer";
+        content: "A Software Engineer";
         animation: textAnim 10s linear infinite;
     }
     @keyframes textAnim {
-        25% {
-            content: "A Website Designer";
+        20% {
+            content: "A React Js Developer";
         }
-        50% {
+        40% {
             content: "A Web Developer";
         }
-        75% {
-            content: "A Content Creator";
+        60% {
+            content: "A MERN Stack Developer";
+        }
+        80% {
+            content: "A Javascript Developer";
         }
     }
 `;
@@ -368,7 +408,7 @@ export const StyledMenuList = styled.div`
         height: 100vh;
         width: 100%;
         background-color: ${(props) =>
-            props.isSticky ? WHITE_COLOR : "#353b48"};
+            props.isSticky ? WHITE_COLOR : DARK_BG_COLOR};
         top: 0;
         right: ${(props) => (props.isActive ? "0" : "-100%")};
         max-width: 400px;
@@ -406,7 +446,7 @@ export const SectionTitle = styled.h1`
         width: 16px;
         height: 10px;
         background-color: ${PRIMARY_COLOR};
-        border: 4px solid ${(props) => (props.dark ? "#353b48" : "#f1f1f1")};
+        border: 4px solid ${(props) => (props.dark ? DARK_BG_COLOR : "#f1f1f1")};
         left: calc(50% - 12px);
         bottom: -7px;
     }
@@ -645,7 +685,7 @@ export const StyledContactInfo = styled(CommonDivFlexWrapSpaceBetween)`
 export const StyledContactItem = styled.div`
     width: calc(33% - 20px);
     height: 160px;
-    background-color: #353b48;
+    background-color: ${DARK_BG_COLOR};
     color: ${WHITE_COLOR};
     text-align: center;
     border-radius: 4px;
@@ -683,7 +723,7 @@ export const StyledContactForm = styled.form`
         width: 100%;
         height: 50px;
         margin: 10px 0;
-        background-color: #353b48;
+        background-color: ${DARK_BG_COLOR};
         border: none;
         outline: none;
         padding: 20px;
@@ -710,7 +750,7 @@ export const StyledContactForm = styled.form`
         color: #fff;
         font-weight: 700;
         font-size: 15px;
-        background-color: #353b48;
+        background-color: ${DARK_BG_COLOR};
         padding: 17px 60px;
         margin: 0 auto;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -746,7 +786,8 @@ export const StyledContactForm = styled.form`
 `;
 
 export const StyledFooter = styled.footer`
-    background: url("/assets/bg.jpg") no-repeat center;
+    /* background: url("/assets/bg.jpg") no-repeat center; */
+    background-color: ${DARK_BG_COLOR};
     color: ${WHITE_COLOR};
     padding: 80px 0;
     text-align: center;
