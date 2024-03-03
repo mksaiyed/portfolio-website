@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import {
     Container,
@@ -11,8 +12,8 @@ const Footer = () => {
         <StyledFooter>
             <Container>
                 <StyledCopyrightBlock>
-                    &copy; 2020 | Created & Designed By{" "}
-                    <a href="#">DarkCoder</a>
+                    &copy; 2022 | Created & Designed By{" "}
+                    <Link href="/">MohammadKaif</Link>
                 </StyledCopyrightBlock>
                 <SocialMediaIcons />
             </Container>

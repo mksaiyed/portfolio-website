@@ -1,4 +1,10 @@
-export const LogoList = ["facebook", "instagram", "twitter", "linkedin"];
+export const LogoList = [
+    { name: "facebook", link: "http://www.facebook.com/mksaiyedfb" },
+    { name: "instagram", link: "http://www.instagram.com/mk__saiyed" },
+    { name: "twitter", link: "http://twitter.com/mk__saiyed" },
+    { name: "linkedin", link: "http://www.linkedin.com/in/mksaiyed" },
+    { name: "github", link: "http://github.com/mksaiyed" },
+];
 
 export const MenuList = [
     "Home",
@@ -10,10 +16,16 @@ export const MenuList = [
 ];
 
 export const AboutSectionData = {
-    heading: "Hi! I'm Darkcoder",
-    aboutTags: ["Web Developer", "Javascript", "React"],
+    heading: "Hi! I'm Mohammad Kaif",
+    aboutTags: [
+        "Web Developer",
+        "JavaScript",
+        "React JS",
+        "Next JS",
+        "React Native",
+    ],
     description:
-        "I can work on Web designing Projects, and SPA with React development.Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum, dolor sit amet consectetur adipisicing elit",
+        "I’m an ambitious Front-End Developer who's passionate about coding and looking for a role in the established IT company with the opportunity to work with the latest technologies on challenging and diverse projects.",
 };
 
 export const Skills = [
@@ -27,121 +39,126 @@ export const Skills = [
 
 export const Services = [
     {
-        title: "Design",
+        title: "Web Design",
         src: "/assets/services/paintbrush.svg",
         description:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+            "The websites I design, build, and improve are easy to understand, navigate, and use by users.",
     },
     {
         title: "Build Websites",
         src: "/assets/services/pager.svg",
         description:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+            "Building personal, blog, business, e-commerce, and mobile-friendly websites using the latest frameworks.",
     },
     {
         title: "Manage Databases",
         src: "/assets/services/database.svg",
         description:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+            "Develop and maintain Organization/Project databases & troubleshoot database problems ",
     },
     {
         title: "Android Apps",
         src: "/assets/services/android.svg",
         description:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+            "I am able to design Android apps as well as Native applications using React-native ",
     },
     {
         title: "UI Design",
         src: "/assets/services/credit-card.svg",
         description:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+            "Creating user experience-driven web designs is one of my favorite things to do.",
     },
     {
-        title: "Edit Texts",
+        title: "Extra Works",
         src: "/assets/services/keyboard.svg",
         description:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+            "If you need any extra work such as scraping or data entry, I can do it in a smart way.",
     },
 ];
 
 export const EducationAndExp = [
     {
-        time: "2018-2020",
-        title: "Software Eng",
-        description: "Lorem ipsum, dolor sit amet consect",
+        time: "Jan 2022-Current",
+        title: "Software Developer",
+        description: "Software Developer at Maruti techlabs.",
     },
     {
-        time: "2018-2020",
-        title: "Software Eng",
-        description: "Lorem ipsum, dolor sit amet consect",
+        time: "Aug 2021-Dec 2021",
+        title: "React Intern",
+        description: "React Intern at Axelor Pvt Ltd.",
     },
     {
-        time: "2018-2020",
-        title: "Software Eng",
-        description: "Lorem ipsum, dolor sit amet consect",
+        time: "July 2018- June 2022",
+        title: "BE/BTech in Information Technology",
+        description:
+            "Graduated from Gandhinagar Engineering College with an 8.65 CGPA.",
     },
     {
-        time: "2018-2020",
-        title: "Software Eng",
-        description: "Lorem ipsum, dolor sit amet consect",
+        time: "June 2016- April 2018",
+        title: "12th (HSC Science)",
+        description: "Completed HSC 12th (Science) with 90%.",
     },
     {
-        time: "2018-2020",
-        title: "Software Eng",
-        description: "Lorem ipsum, dolor sit amet consect",
+        time: "June 2015- April 2016",
+        title: "10th (SSC)",
+        description: "Completed ssc 10th with 80%",
     },
 ];
 
 export const Works = [
     {
-        link: "#",
+        link: "https://responsive-site-kaif.netlify.app",
         src: "/assets/works/1.jpg",
-        title: "Work Title",
-        description: "Lorem ipsum, dolor sit amet consect",
+        title: "Responsive Landing Page",
+        description: "This is a responsive health care landing page.",
     },
     {
-        link: "#",
+        link: "https://todo-list-kaif.netlify.app",
         src: "/assets/works/2.jpg",
-        title: "Work Title",
-        description: "Lorem ipsum, dolor sit amet consect",
+        title: "Todo List",
+        description:
+            "An easy-to-use TODO list with add, delete, search, and no data loss unless deleted.",
     },
     {
-        link: "#",
+        link: "https://weather-site-kaif.netlify.app",
         src: "/assets/works/3.jpg",
-        title: "Work Title",
-        description: "Lorem ipsum, dolor sit amet consect",
+        title: "Weather Website",
+        description:
+            "By changing the city, we can get live weather updates, and I have also displayed all cards using the API.",
     },
     {
-        link: "#",
+        link: "https://react-food-order-kaif.netlify.app",
         src: "/assets/works/4.jpg",
-        title: "Work Title",
-        description: "Lorem ipsum, dolor sit amet consect",
+        title: "React Meals",
+        description:
+            "In this example, I have created a react meals site with functionality for adding meals and viewing carts.",
     },
     {
-        link: "#",
+        link: "https://transparent-login-kaif.netlify.app",
         src: "/assets/works/5.jpg",
-        title: "Work Title",
-        description: "Lorem ipsum, dolor sit amet consect",
+        title: "Transparent Login",
+        description: "Here is sample transparent login page.",
     },
     {
-        link: "#",
+        link: "https://react-expence-kaif.netlify.app",
         src: "/assets/works/6.jpg",
-        title: "Work Title",
-        description: "Lorem ipsum, dolor sit amet consect",
+        title: "React Expense",
+        description:
+            "To gain a better understanding of React concepts, check out this sample site.",
     },
 ];
 
 export const ContactItems = [
     {
         src: "/assets/contact/mobile-screen.svg",
-        value: "+91 999777333",
+        value: "+91 7383270340",
     },
     {
         src: "/assets/contact/email.svg",
-        value: "dummy@email.com",
+        value: "mrmksaiyed@gmail.com",
     },
     {
         src: "/assets/contact/location.svg",
-        value: "Gujarat, India.",
+        value: "Ahmedabad, Gujarat, India.",
     },
 ];

@@ -10,8 +10,8 @@ const SocialMediaIcons = () => {
                 justifyContent: "center",
             }}
         >
-            {LogoList.map((logo) => (
-                <StyledLogo src={`/assets/logo/${logo}.svg`} key={logo} />
+            {LogoList.map((data) => (
+                <StyledLogo src={`/assets/logo/${data.name}.svg`} key={data.name} href={data.link} target="_blank" />
             ))}
         </div>
     );

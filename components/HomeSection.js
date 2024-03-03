@@ -1,9 +1,12 @@
 import React from "react";
-import ButtonComp from "./ButtonComp";
 import {
+    AnimatedHomeTitle,
+    HomeButtonContainer,
     HomeContainer,
     HomeContent,
-    HomeContentTitle,
+    HomeTitle,
+    StyledButton,
+    StyledDownloadButton,
     StyledHomeSection,
 } from "./CommonStyledComp";
 import SocialMediaIcons from "./SocialMediaIcons";
@@ -14,15 +17,25 @@ const HomeSection = () => {
             <StyledHomeSection id="home">
                 <HomeContainer>
                     <HomeContent>
-                        <HomeContentTitle>{`Hi I'm `}</HomeContentTitle>
+                        <HomeTitle>{`Hi, I'm Mohammad Kaif`}</HomeTitle>
+                        <AnimatedHomeTitle />
                         <SocialMediaIcons />
-                        <div style={{ marginTop: 60 }}>
-                            <ButtonComp name="Contact me" href="#contact" />
-                            <ButtonComp
-                                name="Download CV"
-                                variant="secondary"
-                            />
-                        </div>
+                        <HomeButtonContainer>
+                            <StyledButton href="#contact" dark>
+                                Contact Me
+                            </StyledButton>
+                            <StyledDownloadButton
+                                href="/assets/resume.pdf"
+                                download="MohammadKaif Resume"
+                                dark
+                            >
+                                <span className="circle">
+                                    <div></div>
+                                </span>
+                                <span className="title">Download CV</span>
+                                <span className="title-hover">Click Here</span>
+                            </StyledDownloadButton>
+                        </HomeButtonContainer>
                     </HomeContent>
                 </HomeContainer>
             </StyledHomeSection>

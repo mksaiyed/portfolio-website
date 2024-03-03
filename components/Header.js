@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 import {
     NavContainer,
@@ -14,15 +15,17 @@ const Header = ({ isSticky }) => {
         <>
             <StyledNavBar isSticky={isSticky}>
                 <NavContainer>
-                    <Image
-                        src={
-                            "/assets/" +
-                            (isSticky ? "logo-black.png" : "logo-white.png")
-                        }
-                        alt="Logo"
-                        width="42"
-                        height="32"
-                    />
+                    <Link href="/">
+                        <Image
+                            src={
+                                "/assets/" +
+                                (isSticky ? "logo-black.svg" : "logo-white.svg")
+                            }
+                            alt="Logo"
+                            width="42"
+                            height="32"
+                        />
+                    </Link>
                     <StyledMenuToggle
                         isSticky={isSticky}
                         isActive={isActive}
@@ -34,7 +37,11 @@ const Header = ({ isSticky }) => {
                     </StyledMenuToggle>
                     <StyledMenuList isActive={isActive} isSticky={isSticky}>
                         {MenuList.map((data, index) => (
-                            <a href={`#${data.toLowerCase()}`} key={index}>
+                            <a
+                                href={`#${data.toLowerCase()}`}
+                                key={index}
+                                onClick={() => setIsActive((prev) => !prev)}
+                            >
                                 {data}
                             </a>
                         ))}
