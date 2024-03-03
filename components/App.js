@@ -9,11 +9,13 @@ import HomeSection from "./HomeSection";
 import MetaTags from "./MetaTags";
 import ServiceSection from "./ServiceSection";
 import WorkSection from "./WorkSection";
+import BackgroundCanvas from "./BackgroundCanvas";
 
 const App = () => {
     const [isSticky, setIsSticky] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
+        setIsLoading(false);
         const handleScroll = () => {
             if (typeof window !== "undefined") {
                 if (window.scrollY > 20) {
@@ -31,7 +33,7 @@ const App = () => {
             if (loader) console.log("Loader", loader);
         }
         window.addEventListener("scroll", handleScroll);
-        setIsLoading(false);
+
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
@@ -41,6 +43,7 @@ const App = () => {
         <>
             {!isLoading ? (
                 <>
+                    <BackgroundCanvas />
                     <MetaTags />
                     <Header isSticky={isSticky} />
                     <HomeSection />
