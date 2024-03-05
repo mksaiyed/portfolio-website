@@ -10,6 +10,7 @@ import MetaTags from "./MetaTags";
 import ServiceSection from "./ServiceSection";
 import WorkSection from "./WorkSection";
 import BackgroundCanvas from "./BackgroundCanvas";
+import BackgroundBubbles from "./BackgroundBubbles";
 
 const App = () => {
     const [isSticky, setIsSticky] = useState(false);
@@ -43,7 +44,8 @@ const App = () => {
         <>
             {!isLoading ? (
                 <>
-                    <BackgroundCanvas />
+                    {/* <BackgroundCanvas /> */}
+                    <BackgroundBubbles />
                     <MetaTags />
                     <Header isSticky={isSticky} />
                     <HomeSection />

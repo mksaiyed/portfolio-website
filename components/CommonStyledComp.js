@@ -19,6 +19,131 @@ export const Container = styled.div`
     }
 `;
 
+export const BgCircle = styled.div`
+    height: 60px;
+    width: 60px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation: 4s linear infinite;
+
+    span {
+        height: 10px;
+        width: 10px;
+        border-radius: 50px;
+        background: ${PRIMARY_COLOR};
+        position: absolute;
+        top: 20%;
+        right: 20%;
+    }
+
+    ${({ varient }) => {
+        switch (varient) {
+            case 0:
+                return css`
+                    top: 20%;
+                    left: 20%;
+                    animation: animate 8s linear infinite;
+                `;
+            case 1:
+                return css`
+                    top: 60%;
+                    left: 80%;
+                    animation: animate 10s linear infinite;
+                `;
+            case 2:
+                return css`
+                    top: 40%;
+                    left: 40%;
+                    animation: animate 3s linear infinite;
+                `;
+            case 3:
+                return css`
+                    top: 66%;
+                    left: 30%;
+                    animation: animate 7s linear infinite;
+                `;
+            case 4:
+                return css`
+                    top: 90%;
+                    left: 10%;
+                    animation: animate 9s linear infinite;
+                `;
+            case 5:
+                return css`
+                    top: 30%;
+                    left: 60%;
+                    animation: animate 5s linear infinite;
+                `;
+            case 6:
+                return css`
+                    top: 70%;
+                    left: 20%;
+                    animation: animate 8s linear infinite;
+                `;
+            case 7:
+                return css`
+                    top: 75%;
+                    left: 60%;
+                    animation: animate 10s linear infinite;
+                `;
+            case 8:
+                return css`
+                    top: 50%;
+                    left: 50%;
+                    animation: animate 6s linear infinite;
+                `;
+            case 9:
+                return css`
+                    top: 45%;
+                    left: 20%;
+                    animation: animate 10s linear infinite;
+                `;
+            case 10:
+                return css`
+                    top: 10%;
+                    left: 90%;
+                    animation: animate 9s linear infinite;
+                `;
+            case 11:
+                return css`
+                    top: 20%;
+                    left: 70%;
+                    animation: animate 7s linear infinite;
+                `;
+            case 12:
+                return css`
+                    top: 20%;
+                    left: 20%;
+                    animation: animate 8s linear infinite;
+                `;
+            case 13:
+                return css`
+                    top: 60%;
+                    left: 5%;
+                    animation: animate 6s linear infinite;
+                `;
+            case 14:
+                return css`
+                    top: 90%;
+                    left: 80%;
+                    animation: animate 9s linear infinite;
+                `;
+        }
+    }}
+
+    @keyframes animate {
+        0% {
+            transform: scale(0) translateY(0) rotate(70deg);
+        }
+        100% {
+            transform: scale(1.3) translateY(-100px) rotate(360deg);
+        }
+    }
+`;
+
 export const StyledBackgroundCanvas = styled.canvas`
     background-color: ${DARK_BG_COLOR};
     position: absolute;
@@ -113,8 +238,8 @@ export const StyledHomeSection = styled(CommonSection)`
     height: 100vh;
     min-height: 500px;
 
-    background-color: transparent;
-    /* background-color: ${DARK_BG_COLOR}; */
+    // background-color: transparent;
+    background-color: ${DARK_BG_COLOR};
     /* background: url("/assets/bg.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed; */
